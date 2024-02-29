@@ -1,0 +1,8 @@
+CREATE TABLE users (
+    id BIGINT(19) NOT NULL AUTO_INCREMENT,
+    email VARCHAR(255) NULL,
+    password VARCHAR(255) NULL,
+    verified TINYINT(1) NULL DEFAULT '0',
+    
+    PRIMARY KEY (id) USING BTREE
+);
